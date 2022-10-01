@@ -4107,6 +4107,7 @@ class SolutionPage extends AbstractPageApp_1.AbstractPageApp {
     init() {
         this.webStoreURL = this.getWebStoreURL();
         this.edgeStoreURL = "https://microsoftedge.microsoft.com/addons/detail/%D1%80%D0%B0%D0%B7%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%80%D1%83%D1%82%D1%80%D0%B5%D0%BA%D0%B5%D1%80-/lhpldjemmjahpokjediaopipffngnnie";
+        this.githubURL = "https://github.com/KaiHuaDou/Rutracker-Ext-CHS/releases";
         this.crxSoSoURL = "https://www.crxsoso.com/webstore/detail/fddjpichkajmnkjhcmpbbjdmmcodnkej";
         this.initHtmlElements();
         this.registerEventListeners();
@@ -4126,6 +4127,7 @@ class SolutionPage extends AbstractPageApp_1.AbstractPageApp {
                 Array.from(nodeList).forEach(element => utils_1.DOM.show(element));
                 elements.openWebStorePage.href = this.webStoreURL;
                 elements.openCRXSoSoPage.href = this.crxSoSoURL;
+                elements.openGithubPage.href = this.githubURL;
                 elements.openEdgeStorePage.href = this.edgeStoreURL;
                 break;
             default:
@@ -4152,6 +4154,7 @@ class SolutionPage extends AbstractPageApp_1.AbstractPageApp {
             openWebStorePage: this.querySelector('#openWebStorePage'),
             openCRXSoSoPage: this.querySelector('#openCRXSoSoPage'),
             openEdgeStorePage: this.querySelector('#openEdgeStorePage'),
+            openGithubPage: this.querySelector('#openGithubPage'),
             reloadSelfButton: this.querySelector('#reloadSelfButton'),
         };
     }
