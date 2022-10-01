@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>弹出窗口</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main class="hasError">
+	<header>
+		<h1>
+			<span id="openSiteHomePage" class="action" title="转到网站">RuTracker</span>
+		</h1>
+		<div id="openVpnLink" class="action hidden">
+			<img src="../images/vpn-1.svg" class="icon-info" title="保护连接、绕过封锁、完全匿名！" alt="info">
+		</div>
+		<div id="openSupportPage" class="action">
+			<img src="../images/info.svg" class="icon-info" title="帮助" alt="info">
+		</div>
+		<div id="openOptionsPage" class="action" title="设置">
+			<img src="../images/options.svg" alt="设置">
+		</div>
+		<div class="proxy-toggler-wrapper">
+			<label class="group">
+				<span class="group-title">代理:</span>
+				<select id="proxyMode" class="has-proxy-error" title="代理模式">
+					<option value="off" title="关">关</option>
+					<option value="on" title="开">开</option>
+					<option value="auto" id="autoProxyOption" title="自动">自动</option>
+				</select>
+			</label>
+		</div>
+	</header>
+	<section class="errorMessages"></section>
+	<section class="warningMessages"></section>
+	<section class="popup-bottom">
+		<form class="searchForm" action="">
+			<input class="searchQuery" type="text" name="nm" placeholder="在RuTracker中搜索..." autocomplete="off">
+			<button class="searchButton action" type="submit"><img src="../images/search.svg" title="搜索" alt="search"></button>
+		</form>
+	</section>
+	<footer>
+		<div id="exceptionMessage" class="hidden"></div>
+	</footer>
+</main>
+<script src="../bundle/page.js"></script>
+</body>
+</html>

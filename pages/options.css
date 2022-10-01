@@ -1,0 +1,153 @@
+body {
+	margin: 4px 14px;
+	background-color: #ececec;
+}
+main {
+	margin: 5vh auto 20px;
+	min-width: 30rem;
+	width: 40rem;
+	max-width: 95vw;
+	background: #ffffff;
+	padding: 12px 12px 0;
+	box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+	border-radius: 2px;
+}
+h1 {
+	margin: 0.1rem 0.5rem 0.8rem;
+	font-size: 1.3rem;
+	text-align: center;
+}
+.addon-version {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+button {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+button#save {
+	font-weight: bold;
+	font-size: 1.05rem;
+}
+.saved {
+	color: green;
+}
+.invalid {
+	background: #f76e6e;
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	padding: 0.45rem 1.225rem 0.55rem;
+}
+legend {
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	font-size: 1.2rem;
+}
+legend span {
+	color: #000000;
+}
+select, option, input[type="text"] {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 0.1em 0.3em;
+	margin-left: -1px;
+	border: 1px solid #c0c0c0;
+}
+input[type="checkbox"] {
+	margin: 0;
+}
+select:focus, input:focus {
+	z-index: 2;
+}
+input + span {
+	margin-left: 0.5em;
+	-moz-user-select: none;
+	user-select: none;
+}
+.save-button-wrap {
+	text-align: center;
+	padding: 1em;
+}
+a {
+	text-decoration: none;
+}
+section {
+	margin: 1rem 0.2rem;
+}
+.address > * {
+	height: 1.8em;
+}
+.title {
+	margin-top: -0.6rem;
+	color: grey;
+}
+.proxy {
+	align-items: center;
+}
+.desc {
+	color: gray;
+	font-style: italic;
+	font-size: 0.85rem;
+	margin: 4px 0;
+}
+.address + .desc {
+	margin-top: 6px;
+}
+.desc-error {
+	color: red;
+	font-style: normal;
+	margin: 4px 0;
+}
+.help-icon,
+.addon-icon {
+	width: 1.3em;
+	height: auto;
+	vertical-align: text-top;
+}
+.help-icon {
+	opacity: 0.6;
+}
+section.missing-permission {
+	padding: 1.2rem;
+	font-size: 1.1rem;
+	border: 2px solid #ff0000;
+	background: #ffebee;
+}
+section.missing-permission + section {
+	margin-top: 1.5rem;
+}
+section + section.missing-permission {
+	margin-top: 1.5rem;
+}
+.request-permission-wrap {
+	margin-top: 1.3rem;
+	text-align: center;
+}
+button.request-permission {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+li {
+	margin-top: 0.4rem;
+}
+.missing-permission ul {
+	margin-top: -0.5rem;
+	margin-left: -1rem;
+}
+#accessToAllUrls-desc-long {
+	margin-top: 1rem;
+}
+.missing-permission a {
+	text-decoration: underline;
+}
+.bottom-links a, .bottom-links a:visited {
+	color: #000000;
+}
+.bottom-links ul {
+	padding-left: 1.1rem;
+	margin: 1.5rem 0;
+}
+section.footer {
+	border-top: 2px solid #c0c0c0;
+}

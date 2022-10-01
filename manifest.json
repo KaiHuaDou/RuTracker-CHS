@@ -1,0 +1,39 @@
+{
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"manifest_version": 2,
+	"version": "0.9.28",
+	"name": "RuTracker - 官方插件",
+	"short_name": "RuTracker",
+	"description": "RuTracker：使用代理以搜索、访问RuTracker.org",
+	"background": {
+		"page": "/background.html"
+	},
+	"icons": {
+		"128": "/images/addon-128.png"
+	},
+	"browser_action": {
+		"default_icon": "/images/addon-128.png",
+		"default_title": "RuTracker（官方插件）",
+		"default_popup": "/pages/popup.html"
+	},
+	"options_ui": {
+		"page": "/pages/options.html",
+		"chrome_style": false,
+		"open_in_tab": true
+	},
+	"web_accessible_resources": [
+		"/pages/*"
+	],
+	"permissions": [
+		"*://rutracker.org/*",
+		"contextMenus",
+		"proxy",
+		"storage",
+		"tabs",
+		"webRequest",
+		"webRequestBlocking"
+	],
+	"optional_permissions": [
+		"<all_urls>"
+	]
+}

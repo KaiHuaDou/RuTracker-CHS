@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+}
+main {
+	width: 25rem;
+	background: #f5f5f5;
+}
+header {
+	display: flex;
+	align-items: center;
+	font-family: arial, sans-serif;
+	line-height: 0;
+	padding: 2px 3px 4px;
+	background: #fff;
+	border-bottom: 3px solid #9e9e9e;
+	-moz-user-select: none;
+	user-select: none;
+}
+h1 {
+	font-size: 1.4rem;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+.proxy-toggler-wrapper {
+	flex: 2;
+	text-align: right;
+	padding: 0 6px;
+	color: #616161;
+	font-size: 1.1rem;
+}
+.proxy-toggler-wrapper span {
+	margin-left: 3px;
+}
+.proxy-toggler-wrapper .group {
+	align-items: baseline;
+}
+.action {
+	cursor: pointer;
+	color: #616161;
+	line-height: 0;
+}
+header .action {
+	padding: 5px 6px;
+	border-radius: 3px;
+}
+.action:hover {
+	background: #eee;
+	color: #000;
+}
+.action img {
+	opacity: 0.6;
+}
+.action:hover img {
+	opacity: 1;
+}
+header img {
+	width: 1.5rem;
+}
+.icon-info {
+	width: 1.6rem;
+}
+section {
+	padding: 1rem;
+}
+.searchForm {
+	display: flex;
+	align-items: center;
+}
+.searchForm > * {
+	height: 1.8rem;
+}
+.searchQuery {
+	flex: 2;
+	padding: 0.1em 0.3em;
+}
+.searchQuery,
+.searchButton {
+	font-size: 0.9rem;
+	margin-left: -1px;
+	border: 1px solid #9e9e9e;
+}
+.searchButton {
+	padding-left: 8px;
+	padding-right: 8px;
+	background: #fafafa;
+}
+.searchButton img {
+	vertical-align: middle;
+	width: 1rem;
+}
+input:focus {
+	z-index: 2;
+}
+.errorMessages,
+.warningMessages {
+	display: none;
+	padding: 0;
+}
+.hasError .errorMessages,
+.hasError .warningMessages {
+	display: flex;
+}
+select {
+	font-size: 1.1rem;
+	height: 1.5em;
+	padding-left: 5px;
+}
+.warning-message {
+	padding-right: 0.1rem;
+}
