@@ -76,11 +76,9 @@
     return __webpack_require__(__webpack_require__.s = 37);
 
 })
-    /************************************************************************/
     ({
-
-/***/ 37:
-/***/ (function (module, exports, __webpack_require__)
+        37:
+            (function (module, exports, __webpack_require__)
             {
 
                 "use strict";
@@ -88,17 +86,12 @@
                 Object.defineProperty(exports, "__esModule", { value: true });
                 const PageLoader_1 = __webpack_require__(38);
                 new PageLoader_1.PageLoader(window).load();
-
-
-                /***/
             }),
 
-/***/ 38:
-/***/ (function (module, exports, __webpack_require__)
+        38:
+            (function (module, exports, __webpack_require__)
             {
-
                 "use strict";
-
                 Object.defineProperty(exports, "__esModule", { value: true });
                 class PageLoader
                 {
@@ -152,10 +145,5 @@
                     }
                 }
                 exports.PageLoader = PageLoader;
-
-
-                /***/
             })
-
-
     });
