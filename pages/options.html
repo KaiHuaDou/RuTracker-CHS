@@ -2,117 +2,117 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>设置</title>
-	<link rel="stylesheet" href="common.css">
-	<link rel="stylesheet" href="options.css">
+    <meta charset="utf-8">
+    <title>设置</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="options.css">
 </head>
 
 <body class="hidden">
-	<main>
-		<h1>
-			<img class="addon-icon" src="../images/addon-128.png" alt="">
-			<span>RuTracker</span>
-			<span class="addon-version"> - 官方扩展 [<span id="addonVersion"></span>]</span>
-		</h1>
-		<fieldset>
-			<legend>
-				设置
-				<a class="supportPageUrl" target="_blank">
-					<img class="help-icon" src="../images/help.svg" alt="help">
-				</a>
-			</legend>
-			<section class="missing-permission accessToAllUrls hidden">
-				<div id="accessToAllUrls-desc-short">
-					如果要 <a class="supportPageUrl" target="_blank">自动启用代理</a>, 该扩展程序需要获得 转发代理 和 在任何网站上运行 的权限.
-					<span id="explain-accessToAllUrls" class="a-like">详细信息...</span>
-				</div>
-				<ul id="accessToAllUrls-desc-long" class="hidden">
-					<li>
-						有些权限在<b>安装时</b>无法获得。浏览器需要开发者事先解释为什么需要这些许可证。
-					</li>
-					<li>
-						请注意，如果<b>没有必要的权限，扩展将无法正常工作。</b>
-					</li>
-					<li>
-						如果有问题，你可以在
-						<a class="supportPageUrl" target="_blank">
-							<b>论坛上的相关主题</b>
-						</a>反馈。
-					</li>
-				</ul>
-				<div class="request-permission-wrap">
-					<button class="error-handler request-permission" data-functionality="accessToAllUrls">申请权限</button>
-				</div>
-			</section>
-			<section>
-				<div class="title">
-					代理地址:
-				</div>
-				<div class="group address">
-					<select id="schema" title="代理方法">
-						<option value="http">http</option>
-						<option value="https">https</option>
-					</select>
-					<input id="sld" class="invalid" title="二级域名" type="text" size="15" maxlength="50">
-					<input id="tld" class="invalid" title="顶级域名" type="text" size="5" maxlength="24">
-				</div>
-				<div id="address-desc" class="desc">
-					当代理模式是<b>禁用</b>时
-					<span class="missing-permission accessToAllUrls hidden"><b>获得批准</b></span>
-				</div>
-			</section>
-			<section>
-				<div id="proxy-mode-group" class="group proxy">
-					<span class="group-title">代理模式:</span>
-					<select id="proxyMode" class="has-proxy-error" title="прокси">
-						<option value="off">禁用</option>
-						<option value="on">启用</option>
-						<option value="auto" id="autoProxyOption">自动启用</option>
-					</select>
-				</div>
-				<div id="proxy-mode-desc" class="desc missing-permission accessToAllUrls hidden">
-					为了 <a class="supportPageUrl" target="_blank">
-						<b>自动启用</b>
-					</a>扩展
-					<b>申请权限</b>并选择<b>自动启用</b>
-				</div>
-				<div id="proxy-error-desc" class="desc-error"></div>
-			</section>
-			<section>
-				<label class="group">
-					<input id="addContextMenu" type="checkbox">
-					<span>搜索上下文菜单</span>
-				</label>
-			</section>
-			<section class="footer">
-				<ul class="bottom-links">
-					<li>
-						<div id="proxyModeTipTitle" class="clickable">代理选项的选择是什么？</div>
-						<div id="proxyModeTipBody" class="hidden">
-							<ul>
-								<li>如果您的网站<b>未被封锁</b>，请选择<b>禁用</b></li>
-								<li>如果封锁，但您不使用<b>其他扩展绕过封锁，请选择<b>启用</b></li>
-								<li>如果您被封锁，并且您使用</b>其他扩展绕过封锁，请选择<b>自动启用</b></li>
-							</ul>
-						</div>
-					</li>
-					<li id="restoreHiddenWarnings" class="restoreHiddenWarnings clickable hidden">&#9888; 恢复隐藏警告</li>
-					<li><a class="supportPageUrl" target="_blank">论坛中有关扩展的主题</a></li>
-					<li class="hidden"><a id="optionsVpn" target="_blank">通过VPN绕过封锁：完全匿名！</a></li>
-					<li id="toggleActivePermissions" class="clickable">显示当前权限</li>
-					<li id="activePermissions" class="code no-bullet hidden"></li>
-				</ul>
-			</section>
-		</fieldset>
-		<div class="save-button-wrap">
-			<button id="save" class="saved" accesskey="s">保存</button>
-		</div>
-		<footer>
-			<div id="exceptionMessage" class="hidden"></div>
-		</footer>
-	</main>
-	<script src="../bundle/page.js"></script>
+    <main>
+        <h1>
+            <img class="addon-icon" src="../images/addon-128.png" alt="">
+            <span>RuTracker</span>
+            <span class="addon-version"> - 官方扩展 [<span id="addonVersion"></span>]</span>
+        </h1>
+        <fieldset>
+            <legend>
+                设置
+                <a class="supportPageUrl" target="_blank">
+                    <img class="help-icon" src="../images/help.svg" alt="help">
+                </a>
+            </legend>
+            <section class="missing-permission accessToAllUrls hidden">
+                <div id="accessToAllUrls-desc-short">
+                    如果要 <a class="supportPageUrl" target="_blank">自动启用代理</a>, 该扩展程序需要获得 转发代理 和 在任何网站上运行 的权限.
+                    <span id="explain-accessToAllUrls" class="a-like">详细信息...</span>
+                </div>
+                <ul id="accessToAllUrls-desc-long" class="hidden">
+                    <li>
+                        有些权限在<b>安装时</b>无法获得。浏览器需要开发者事先解释为什么需要这些许可证。
+                    </li>
+                    <li>
+                        请注意，如果<b>没有必要的权限，扩展将无法正常工作。</b>
+                    </li>
+                    <li>
+                        如果有问题，你可以在
+                        <a class="supportPageUrl" target="_blank">
+                            <b>论坛上的相关主题</b>
+                        </a>反馈。
+                    </li>
+                </ul>
+                <div class="request-permission-wrap">
+                    <button class="error-handler request-permission" data-functionality="accessToAllUrls">申请权限</button>
+                </div>
+            </section>
+            <section>
+                <div class="title">
+                    代理地址:
+                </div>
+                <div class="group address">
+                    <select id="schema" title="代理方法">
+                        <option value="http">http</option>
+                        <option value="https">https</option>
+                    </select>
+                    <input id="sld" class="invalid" title="二级域名" type="text" size="15" maxlength="50">
+                    <input id="tld" class="invalid" title="顶级域名" type="text" size="5" maxlength="24">
+                </div>
+                <div id="address-desc" class="desc">
+                    当代理模式是<b>禁用</b>时
+                    <span class="missing-permission accessToAllUrls hidden"><b>获得批准</b></span>
+                </div>
+            </section>
+            <section>
+                <div id="proxy-mode-group" class="group proxy">
+                    <span class="group-title">代理模式:</span>
+                    <select id="proxyMode" class="has-proxy-error" title="прокси">
+                        <option value="off">禁用</option>
+                        <option value="on">启用</option>
+                        <option value="auto" id="autoProxyOption">自动启用</option>
+                    </select>
+                </div>
+                <div id="proxy-mode-desc" class="desc missing-permission accessToAllUrls hidden">
+                    为了 <a class="supportPageUrl" target="_blank">
+                        <b>自动启用</b>
+                    </a>扩展
+                    <b>申请权限</b>并选择<b>自动启用</b>
+                </div>
+                <div id="proxy-error-desc" class="desc-error"></div>
+            </section>
+            <section>
+                <label class="group">
+                    <input id="addContextMenu" type="checkbox">
+                    <span>搜索上下文菜单</span>
+                </label>
+            </section>
+            <section class="footer">
+                <ul class="bottom-links">
+                    <li>
+                        <div id="proxyModeTipTitle" class="clickable">代理选项的选择是什么？</div>
+                        <div id="proxyModeTipBody" class="hidden">
+                            <ul>
+                                <li>如果您的网站<b>未被封锁</b>，请选择<b>禁用</b></li>
+                                <li>如果封锁，但您不使用<b>其他扩展绕过封锁，请选择<b>启用</b></li>
+                                <li>如果您被封锁，并且您使用</b>其他扩展绕过封锁，请选择<b>自动启用</b></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="restoreHiddenWarnings" class="restoreHiddenWarnings clickable hidden">&#9888; 恢复隐藏警告</li>
+                    <li><a class="supportPageUrl" target="_blank">论坛中有关扩展的主题</a></li>
+                    <li class="hidden"><a id="optionsVpn" target="_blank">通过VPN绕过封锁：完全匿名！</a></li>
+                    <li id="toggleActivePermissions" class="clickable">显示当前权限</li>
+                    <li id="activePermissions" class="code no-bullet hidden"></li>
+                </ul>
+            </section>
+        </fieldset>
+        <div class="save-button-wrap">
+            <button id="save" class="saved" accesskey="s">保存</button>
+        </div>
+        <footer>
+            <div id="exceptionMessage" class="hidden"></div>
+        </footer>
+    </main>
+    <script src="../bundle/page.js"></script>
 </body>
 
 </html>
