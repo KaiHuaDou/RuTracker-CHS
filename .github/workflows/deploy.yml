@@ -18,13 +18,7 @@ jobs:
           rm -rf .github
           rm -rf .git
 
-      - name: Compress
-        uses: thedoctor0/zip-release@main
-        with:
-          type: zip
-          filename: RuTracker_CHS.zip
-
       - name: Upload
         uses: actions/upload-artifact@v3
         with:
-          path: RuTracker_CHS.zip
+          path: .

@@ -11,14 +11,12 @@
         if (installedModules[moduleId])
         {
             return installedModules[moduleId].exports;
-
         }
         // Create a new module (and put it into the cache)
         var module = installedModules[moduleId] = {
             i: moduleId,
             l: false,
             exports: {}
-
         };
 
         // Execute the module function
@@ -29,10 +27,7 @@
 
         // Return the exports of the module
         return module.exports;
-
     }
-
-
     // expose the modules object (__webpack_modules__)
     __webpack_require__.m = modules;
 
@@ -48,11 +43,8 @@
                 configurable: false,
                 enumerable: true,
                 get: getter
-
             });
-
         }
-
     };
 
     // getDefaultExport function for compatibility with non-harmony modules
@@ -63,7 +55,6 @@
             function getModuleExports() { return module; };
         __webpack_require__.d(getter, 'a', getter);
         return getter;
-
     };
 
     // Object.prototype.hasOwnProperty.call
@@ -531,11 +522,8 @@
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
             exports.sleep = sleep;
-
-
-
         }),
-        /* 1 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -557,11 +545,8 @@
                     console.error(error);
                 }
             })();
-
-
-
         }),
-        /* 2 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -648,11 +633,8 @@
                 HeaderNames["AddonProxyValidity"] = "BB-Addon-Proxy";
                 HeaderNames["AddonSiteId"] = "X-BB-ID";
             })(HeaderNames = exports.HeaderNames || (exports.HeaderNames = {}));
-
-
-
         }),
-        /* 3 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -676,11 +658,8 @@
                 }
             }
             exports.AbstractModule = AbstractModule;
-
-
-
         }),
-        /* 4 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -692,11 +671,8 @@
             exports.pchrome = new utils_1.PromisifiedChrome();
             exports.supports = new utils_1.Supports();
             exports.chromeStorage = new utils_1.ChromeStorage();
-
-
-
         }),
-        /* 5 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -735,11 +711,8 @@
                 optionsVpn: `https://${config_domain_1.mainDomain}/forum/go2.php?pl=9`,
                 popupVpn: `https://${config_domain_1.mainDomain}/forum/go2.php?pl=8`,
             };
-
-
-
         }),
-        /* 6 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -765,11 +738,8 @@
                 }
             }
             exports.AbstractPageApp = AbstractPageApp;
-
-
-
         }),
-        /* 7 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -789,11 +759,8 @@
                 return loggers[label];
             }
             exports.createLogger = createLogger;
-
-
-
         }),
-        /* 8 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -821,11 +788,8 @@
                     `*://${exports.mainDomain}/*`,
                 ],
             };
-
-
-
         }),
-        /* 9 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -1107,11 +1071,8 @@
                 }
             }
             exports.App = App;
-
-
-
         }),
-        /* 10 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -1143,10 +1104,8 @@
             }
             exports.generateRandomString = generateRandomString;
             //# sourceMappingURL=index.js.map
-
-
         }),
-        /* 11 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -1483,22 +1442,16 @@
                     query: parse(extract(input), options)
                 };
             };
-
-
-
         }),
-        /* 12 */
+
         (function (module, exports, __webpack_require__)
         {
 
             "use strict";
 
             module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
-
-
-
         }),
-        /* 13 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -1615,17 +1568,12 @@
                     return customDecodeURIComponent(encodedURI);
                 }
             };
-
-
-
         }),
-        /* 14 */
+
         (function (module, exports, __webpack_require__)
         {
 
             "use strict";
-
-
             module.exports = (string, separator) =>
             {
                 if (!(typeof string === 'string' && typeof separator === 'string'))
@@ -1650,11 +1598,8 @@
                     string.slice(separatorIndex + separator.length)
                 ];
             };
-
-
-
         }),
-        /* 15 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -1790,11 +1735,8 @@
                 }
             }
             exports.Logger = Logger;
-
-
-
         }),
-        /* 16 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -1883,8 +1825,6 @@
                     return '[UnexpectedJSONParseError]: ' + err.message;
                 }
             };
-
-
             /**
              * Colorize log arguments if enabled.
              *
@@ -2012,15 +1952,10 @@
                     return window.localStorage;
                 } catch (e) { }
             }
-
-
-
         }),
-        /* 17 */
+
         (function (module, exports, __webpack_require__)
         {
-
-
             /**
              * This is the common logic for both the Node.js and web browser
              * implementations of `debug()`.
@@ -2270,11 +2205,8 @@
                 if (val instanceof Error) return val.stack || val.message;
                 return val;
             }
-
-
-
         }),
-        /* 18 */
+
         (function (module, exports)
         {
 
@@ -2446,11 +2378,8 @@
                 }
                 return Math.ceil(ms / n) + ' ' + name + 's';
             }
-
-
-
         }),
-        /* 19 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -2674,11 +2603,8 @@
                 }
             }
             exports.AddonLiveReload = AddonLiveReload;
-
-
-
         }),
-        /* 20 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -2781,11 +2707,8 @@
                 }
             }
             exports.BrowserAction = BrowserAction;
-
-
-
         }),
-        /* 21 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -2853,7 +2776,7 @@
                         contexts: ['selection'],
                         id: MenuIds.Search,
                         onclick: this.searchMenuClickHandler.bind(this),
-                        title: 'Поиск на Рутрекере',
+                        title: '在 Rutracker 上搜索',
                     }, () =>
                     {
                         this.menus.add(MenuIds.Search);
@@ -2882,11 +2805,8 @@
                 }
             }
             exports.ContextMenu = ContextMenu;
-
-
-
         }),
-        /* 22 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -3169,11 +3089,8 @@
                 }
             }
             exports.ErrorHandler = ErrorHandler;
-
-
-
         }),
-        /* 23 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -3233,11 +3150,8 @@
                 }
             }
             exports.Messaging = Messaging;
-
-
-
         }),
-        /* 24 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -3489,11 +3403,8 @@
                 }
             }
             exports.OptionsPage = OptionsPage;
-
-
-
         }),
-        /* 25 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -3659,14 +3570,10 @@
                 }
             }
             exports.Permissions = Permissions;
-
-
-
         }),
-        /* 26 */
+
         (function (module, exports, __webpack_require__)
         {
-
             "use strict";
 
             Object.defineProperty(exports, "__esModule", { value: true });
@@ -3841,7 +3748,7 @@
                     if (!background_1.app.settings.isProxiedDomain(preferredDomain))
                     {
                         elements.proxyMode.disabled = true;
-                        elements.proxyMode.title = `Недоступно для ${preferredDomain}`;
+                        elements.proxyMode.title = `不适用于${preferredDomain}`;
                     }
                 }
                 async toggleProxy(event)
@@ -3860,11 +3767,8 @@
                 }
             }
             exports.PopupPage = PopupPage;
-
-
-
         }),
-        /* 27 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -3988,11 +3892,8 @@
                 decorators_1.debounce(250)
             ], ProxyAuto.prototype, "tabActivated", null);
             exports.ProxyAuto = ProxyAuto;
-
-
-
         }),
-        /* 28 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4045,11 +3946,8 @@
                 });
             }
             exports.debounce = debounce;
-
-
-
         }),
-        /* 29 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4120,11 +4018,8 @@
                 }
             }
             exports.ProxyController = ProxyController;
-
-
-
         }),
-        /* 30 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4221,11 +4116,8 @@
                 }
             }
             exports.ProxyOnRequest = ProxyOnRequest;
-
-
-
         }),
-        /* 31 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4428,11 +4320,8 @@
                 }
             }
             exports.ProxyPAC = ProxyPAC;
-
-
-
         }),
-        /* 32 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4495,11 +4384,8 @@
                 }
             }
             exports.ProxyScript = ProxyScript;
-
-
-
         }),
-        /* 33 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4617,11 +4503,8 @@
                 }
             }
             exports.RedirectorPage = RedirectorPage;
-
-
-
         }),
-        /* 34 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -4935,11 +4818,8 @@
                 }
             }
             exports.Settings = Settings;
-
-
-
         }),
-        /* 35 */
+
         (function (module, exports, __webpack_require__)
         {
 
@@ -5045,11 +4925,8 @@
                 }
             }
             exports.SolutionPage = SolutionPage;
-
-
-
         }),
-        /* 36 */
+
         (function (module, exports, __webpack_require__)
         {
 

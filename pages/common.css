@@ -2,8 +2,7 @@
 /*outline: 1px solid red;*/
 /*}*/
 html,
-body
-{
+body {
     font-family: Verdana, Arial, sans-serif;
     font-size: 100%;
     box-sizing: border-box;
@@ -11,31 +10,26 @@ body
 
 *,
 *::before,
-*::after
-{
+*::after {
     box-sizing: inherit;
 }
 
-body
-{
+body {
     line-height: 1.5;
     font-size: 1rem;
 }
 
-.hidden
-{
+.hidden {
     display: none;
 }
 
-#exceptionMessage
-{
+#exceptionMessage {
     color: red;
     white-space: pre-line;
     padding: 4px 8px;
 }
 
-.open-solution-button
-{
+.open-solution-button {
     color: #3f51b5;
     font-size: 1.1rem;
     font-weight: bold;
@@ -44,85 +38,70 @@ body
     margin-top: 6px;
 }
 
-.open-solution-button:hover
-{
+.open-solution-button:hover {
     color: #1e88e5;
 }
 
-label
-{
+label {
     cursor: pointer;
 }
 
-label:hover
-{
+label:hover {
     color: #0000ff;
 }
 
-.group
-{
+.group {
     display: inline-flex;
     align-items: center;
 }
 
-input[type="checkbox"]:checked+span
-{
+input[type="checkbox"]:checked + span {
     font-weight: bold;
 }
 
-input[type="checkbox"]:disabled+span
-{
+input[type="checkbox"]:disabled + span {
     color: #808080;
 }
 
-.group-title
-{
+.group-title {
     margin-right: 0.5rem;
 }
 
-select
-{
+select {
     height: 1.8em;
 }
 
-.has-proxy-error
-{
+.has-proxy-error {
     outline: 2px solid red;
 }
 
-.errorMessages
-{
+.errorMessages {
     font-size: 1.1rem;
     color: #000000;
     background: #fbe9e7;
 }
 
-.warningMessages
-{
+.warningMessages {
     font-size: 1.1rem;
     color: #000000;
     background: #fff3e0;
 }
 
-.hasError header
-{
+.hasError header {
     border-bottom-color: #d84315;
 }
 
-.hasError .errorMessages+.warningMessages,
-.hasError .popup-bottom
-{
+.hasError .errorMessages + .warningMessages,
+.hasError .popup-bottom {
     border-top: 2px solid #d84315;
 }
 
-.errorMessages li+li,
-.warningMessages li+li
-{
+.errorMessages li + li,
+.warningMessages li + li {
     margin-top: 1em;
 }
 
-button.hide-warning
-{
+button.hide-warning {
     float: right;
     border: 1px solid #616161;
     border-radius: 2px;
@@ -133,54 +112,45 @@ button.hide-warning
     padding-right: 0.5rem;
 }
 
-.clickable
-{
+.clickable {
     cursor: pointer;
 }
 
 a,
-a:visited
-{
+a:visited {
     color: #0000ee;
 }
 
 a:hover,
-.clickable:hover
-{
+.clickable:hover {
     color: #0000ff !important;
 }
 
-.restoreHiddenWarnings
-{
+.restoreHiddenWarnings {
     color: #c62828;
 }
 
-.a-like
-{
+.a-like {
     color: #006699;
     cursor: pointer;
     user-select: none;
 }
 
-.a-like:hover
-{
+.a-like:hover {
     color: #d60000;
 }
 
-.missing-permission .a-like
-{
+.missing-permission .a-like {
     font-weight: bold;
     color: #1565c0;
     text-decoration: underline;
 }
 
-.no-bullet
-{
+.no-bullet {
     list-style-type: none;
 }
 
-.code
-{
+.code {
     white-space: pre-wrap;
     font-family: "Lucida Console", Consolas, monospace;
     padding: 0.5rem 1rem;

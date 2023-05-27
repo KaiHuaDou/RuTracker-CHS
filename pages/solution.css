@@ -1,25 +1,20 @@
-main
-{
+main {
     width: 500px;
 }
 
-h3
-{
+h3 {
     font-size: 1.1rem;
     text-align: center;
 }
 
-li
-{
+li {
     margin-bottom: 12px;
 }
 
-input
-{
+input {
     font-size: 1.1rem;
 }
 
-.solutionMessage.firefox>div
-{
+.solutionMessage.firefox > div {
     text-align: center;
 }
